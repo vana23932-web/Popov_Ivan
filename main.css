@@ -1,0 +1,401 @@
+/* Общие стили */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-optical-sizing: auto;
+  background-color: #FBFBFB;
+}
+
+.wrapper {
+  width: 100%;
+  background-color: #FBFBFB;
+}
+
+.container {
+  width: 1128px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+header .logo {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 300;
+  color: #0736FE;
+}
+
+.hero {
+  padding-bottom: 100px;
+}
+
+.hero .img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Обновленный About me */
+.about-me-block {
+  margin: 40px 0 80px;
+  background: #fff;
+  border-radius: 24px;
+  padding: 40px 50px;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  color: #222;
+}
+
+.about-title,
+.section-title {
+  color: #000000;
+  text-align: left;
+  font-weight: 900;
+  font-size: 36px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.about-grid {
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.about-photo {
+  flex: 0 0 295px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.profile-photo {
+  width: 295px;
+  height: 350px;
+  border-radius: 24px;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(36,44,93,0.15);
+}
+
+.about-left {
+  flex: 1 1 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  min-width: 0;
+}
+
+.about-card {
+  background: #f9f9f9;
+  border: 2px solid #e8e8e8;
+  border-radius: 20px;
+  padding: 32px 28px;
+}
+
+.about-card h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #0454FE;
+}
+
+.about-card p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.contacts-section {
+  margin-bottom: 40px;
+}
+
+.contacts-row {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.contact-card {
+  background: #191919;
+  color: #fff;
+  border-radius: 16px;
+  padding: 22px 28px;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+  transition: box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.contact-card:hover {
+  box-shadow: 0 0 14px 3px #0454FE;
+}
+
+.contact-card img {
+  width: 28px;
+  margin-bottom: 8px;
+  object-fit: contain;
+}
+
+.contact-card .contact-value {
+  font-size: 16px;
+  color: #deebff;
+}
+
+.contact-card.gmail {
+  background-color: #0454fe;
+  box-shadow: 0 0 12px #0454fe;
+}
+
+.contact-card.github {
+  background-color: #fff;
+  color: #222;
+  border: 2px solid #222;
+  box-shadow: none;
+  cursor: default;
+}
+
+.contact-card.github .contact-value {
+    color: #222;
+}
+
+.skills-section {
+  border-top: 2px solid #0454fe;
+  padding-top: 40px;
+}
+
+.skills-row {
+  display: flex;
+  gap: 30px;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.skills-block {
+  border: 2px solid #0454fe;
+  border-radius: 20px;
+  background: #fff;
+  padding: 20px 32px;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  box-shadow: 0 0 20px rgba(4,84,254,0.3);
+  transition: box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.skills-block:hover {
+  box-shadow: 0 0 35px rgba(4,84,254,0.6);
+}
+
+.skills-title {
+  color: #0454fe;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.skills-list {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.skill-tag {
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 14px;
+  color: #222;
+  background-color: #e9e9e9;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.skill-tag.figma {
+  background-color: #316a2a;
+  color: #fff;
+}
+
+.skill-tag.photoshop {
+  background-color: #2f5372;
+  color: #fff;
+}
+
+.skill-tag.illustrator {
+  background-color: #a04612;
+  color: #fff;
+}
+
+/* Стиль для центрирования больших изображений */
+.centered-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%; /* Чтобы изображение не выходило за рамки экрана */
+  height: auto;
+  padding-bottom: 100px; /* Отступ снизу, как у верхнего изображения */
+}
+
+.role-block {
+  background-color: #0454fe;
+  color: #fff;
+  border-radius: 24px;
+  padding: 26px 60px;
+  min-width: 280px;
+  text-align: center;
+  box-shadow: 0 12px 36px rgba(4, 84, 254, 0.5);
+  cursor: default;
+  transition: background-color 0.3s ease;
+}
+
+.role-block div:first-child {
+    font-size: 18px; /* Размер для "Роль в команде" */
+    margin-bottom: 8px;
+    font-style: normal;
+}
+
+.role-block .role-title {
+  font-size: 32px; /* Размер для "Дизайнер" */
+  font-weight: 700;
+  font-style: italic;
+}
+
+.role-block:hover {
+  background-color: #023fa5;
+}
+
+.music-block {
+  width: 100%;
+  background: #fbfbfb;
+  padding: 60px 0;
+}
+
+.music-content {
+  display: flex;
+  width: 1128px;
+  margin: 0 auto;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.music-text {
+  flex: 1;
+  max-width: 58%;
+  min-width: 0;
+}
+
+.music-title-img {
+  width: 100%;
+  max-width: 660px;
+  height: auto;
+  display: block;
+  margin-bottom: 30px;
+  object-fit: contain;
+}
+
+.music-desc p {
+  font-size: 20px;
+  color: #242424;
+  line-height: 1.5;
+  margin: 0;
+  word-break: break-word;
+}
+
+.music-desc a {
+  color: #1456e6;
+  text-decoration: underline;
+  transition: color 0.15s;
+}
+
+.music-desc a:hover {
+  color: #f37121;
+}
+
+.music-img-block {
+  flex-shrink: 0;
+  width: 360px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.music-lego-img {
+  width: 360px;
+  height: 360px;
+  border-radius: 30px;
+  object-fit: cover;
+  box-shadow: 0 0 48px 2px rgba(58, 80, 255, 0.13);
+  background: linear-gradient(120deg, #e0eafd 15%, #4072ff 100%);
+}
+
+/* Адаптив */
+@media (max-width: 1200px) {
+  .container {
+    width: 95%;
+  }
+  .music-content {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .music-text {
+    max-width: 100%;
+  }
+  .music-img-block {
+    width: 260px;
+    margin-top: 30px;
+  }
+  .music-lego-img {
+    width: 260px;
+    height: 260px;
+  }
+  .music-title-img {
+    max-width: 91vw;
+  }
+}
+
+@media (max-width: 950px) {
+  .about-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .about-photo {
+    flex: none;
+    order: -1; /* Ставим фото сверху на мобильных устройствах */
+  }
+  .about-left {
+    flex: none;
+    width: 100%;
+  }
+  .contacts-row,
+  .skills-row {
+    justify-content: center;
+    gap: 20px;
+  }
+  .role-block {
+    min-width: auto;
+    width: 100%;
+    font-size: 26px;
+    padding: 22px 40px;
+  }
+}
